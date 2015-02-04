@@ -1,0 +1,35 @@
+/*
+Theme Name: Blue Edgy (vormals Design RRZE)
+Theme URI: http://github.com/RRZE-Webteam/blue-eddy
+Author: RRZE-Webteam
+Author URI: http://blogs.fau.de/webworking
+Description: Zwei- und dreispaltige Ansicht im Desktop-Browser. CSS3 Media Queries, vorbereitet für die Ansicht auf Tablets und Smartphones. Theme-Einstellungen im Adminbereich (personalisierte Hintergrund-Farbe, Linkfarben und Textfarbe angeben und Bild als Logo einfügen).
+Tags: rrze, webbaukasten, vorlagenkatalog
+Version: 2.0.14.11.03
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: _rrze
+*/
+
+/* Import core styles | Basis-Stylesheets einbinden */
+@import url(css/yaml/core/base.min.css);
+
+/* Import screen layout | Screen-Layout einbinden */
+@import url(css/yaml/navigation/hlist.css);
+@import url(css/yaml/navigation/vlist.css);
+@import url(css/yaml/forms/gray-theme.css);
+
+/* Import print layout | Druck-Layout einbinden */
+@import url(css/yaml/print/print.css);
+
+/* Import theme core styles | Basis-Theme-Stylesheets einbinden */
+@import url(css/base.css);
+
+/* Import global theme typography settings |  Globalen Theme-Typografieeinstellungen einbinden */
+@import url(css/typography.css);
+
+/* Import theme screen layout | Screen-Theme-Layout einbinden */
+@import url(css/screen.css);
+
+/* Import theme print layout | Theme-Druck-Layout einbinden */
+@import url(css/print.css);
