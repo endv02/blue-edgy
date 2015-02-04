@@ -17,7 +17,7 @@ add_action( 'admin_menu', function() {
     
     $pages = RRZE_Theme::$options_pages;
     foreach( $pages as $page) {
-        add_submenu_page( 'theme_options', $page['label'], $page['label'], 'edit_theme_options', $page['value'], '_rrze_theme_options_menu_page' );
+        add_theme_page( $page['label'], $page['label'], 'edit_theme_options', $page['value'], '_rrze_theme_options_menu_page' );
     }
 }, 100 );
 
@@ -702,7 +702,6 @@ function _rrze_theme_options_menu_page() {
     ?>
     <div class="wrap">
 
-        <?php screen_icon(); ?>
         <h2><?php _e( 'Einstellungen', RRZE_Theme::textdomain );?></h2>
         <?php settings_errors(); ?>
         <h2 class="nav-tab-wrapper">

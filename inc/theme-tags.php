@@ -17,7 +17,7 @@ class Theme_Tags {
         $list = sprintf( '<ul><li><span>%s</span></li>', __( 'Sie befinden sich hier:', RRZE_Theme::textdomain ) );
 
         if ( ! is_front_page() ) {
-            $list .= sprintf( '<li><a href="%s">%s</a><span>»</span></li>', get_bloginfo('url'), __('Startseite', RRZE_Theme::textdomain ) );
+            $list .= sprintf( '<li><a href="%s">%s</a><span>»</span></li>', home_url(), __('Startseite', RRZE_Theme::textdomain ) );
 
             if ( is_category() ) {
                 $list .= sprintf( '<li><span>%s %s</span></li>', __('Kategorie', RRZE_Theme::textdomain ), single_cat_title( '', false) );
