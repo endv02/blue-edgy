@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
-        <title><?php wp_title(); ?></title>
+        <title><?php wp_title(''); ?></title>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />	
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
         <meta name="generator" content="Blogdienst der FAU <?php echo sprintf('WordPress %s', $GLOBALS['wp_version']); ?>" />
