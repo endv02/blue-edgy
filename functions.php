@@ -128,7 +128,9 @@ class RRZE_Theme {
         
         add_filter('wp_list_categories', array($this, 'wp_list_categories'), 10, 2);
         
-        add_filter( 'excerpt_length', array($this, 'excerpt_length'), 999 );        
+        add_filter( 'excerpt_length', array($this, 'excerpt_length'), 999 );     
+        
+        add_filter( 'wp_title', array($this, 'blue_edgy_wp_title') );
     }
             
 
@@ -491,6 +493,16 @@ class RRZE_Theme {
         $options = self::$theme_options;
         return $options['words.overview'];
     }
+    
+    public function blue_edgy_wp_title( $title ) {
+        $out = get_bloginfo('name') . ' | ';
+        if(is_home() || is_front_page()) {
+            $out .= get_bloginfo( 'description' );
+        } else {
+            $out .= $title;
+        }
+        return $out;
+    } 
 
     public function add_meta_box( $post_type ) {
         $post_types = array('post', 'page');
