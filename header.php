@@ -4,7 +4,7 @@
         <title><?php wp_title(''); ?></title>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />	
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
-        <meta name="generator" content="Blogdienst der FAU <?php echo sprintf('WordPress %s', $GLOBALS['wp_version']); ?>" />
+        <meta name="generator" content="<?php echo sprintf('WordPress %s', $GLOBALS['wp_version']); ?>" />
         <link rel="canonical" href='http://<?php echo $_SERVER["HTTP_HOST"] ?><?php echo parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>' />
         <meta name="description" content="<?php global $pagename; echo $pagename ? $pagename : get_the_title(); ?>" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
