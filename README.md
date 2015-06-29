@@ -3,8 +3,6 @@ Design Blue Edgy
 
 Wordpress Theme
 
-(vormals Design RRZE, Version 2.0)
-
 * Zwei- und dreispaltige Ansicht im Desktop-Browser. 
 * CSS3 Media Queries, vorbereitet für die Ansicht auf Tablets und Smartphones. 
 * Theme-Einstellungen im Adminbereich (personalisierte Hintergrund-Farbe, Linkfarben und Textfarbe angeben und Bild als Logo einfügen).
@@ -14,9 +12,9 @@ Wordpress Theme
 <pre>
 [ym-table class="bordertable" delimiter=";"]
 Artikelnummer;Artikelname Name;Preis inkl. MwSt
-1351186;Buttertoast 500g;1,50 €
+1351100;Buttertoast 500g;1,50 €
 1351416;Blütenhonig 500g;3,50 €
-1351486 ;Markenzwieback 250g;1,95 €
+1351486 ;Markenzwieback 250g:br:im Moment nicht verfügbar;1,95 €
 [/ym-table]
 </pre>
 

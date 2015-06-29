@@ -229,5 +229,23 @@
     .bypostauthor {        
     }
 
+    .info, .warning {
+        background: #ffffff none repeat scroll 0 0 !important;
+    }
+    
+    .box.dashicons-lightbulb::before {
+        color: #ffd700;
+    }
+    
+    .box.dashicons-info::before {
+        color: #dc143c;
+    }
+        
+    .box.dashicons-before::before {
+        font-size: 25px;
+        height: 25px;
+        width: 30px;
+        line-height: .75;
+    }
 
 }

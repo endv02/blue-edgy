@@ -80,11 +80,12 @@ class RRZE_Theme {
         }            
         $this->update_version();
 
-        require_once( get_template_directory() . '/inc/template-parser.php' );
-        require_once( get_template_directory() . '/inc/theme-tags.php' );
-        require_once( get_template_directory() . '/inc/theme-options.php' );
-        require_once( get_template_directory() . '/inc/shortcodes.php' );
-        require_once( get_template_directory() . '/inc/widgets.php');
+        require_once( get_template_directory() . '/includes/template-parser.php' );
+        require_once( get_template_directory() . '/includes/theme-tags.php' );
+        require_once( get_template_directory() . '/includes/theme-options.php' );
+        require_once( get_template_directory() . '/includes/shortcodes.php' );
+        require_once( get_template_directory() . '/includes/widgets.php');
+        require_once( get_template_directory() . '/includes/tinymce.php' );
 
         // The .mo files must use language-only filenames, like languages/de_DE.mo in your theme directory.
         // Unlike plugin language files, a text domain name like _rrze-de_DE.mo will NOT work.
@@ -102,35 +103,35 @@ class RRZE_Theme {
         
         $this->register_nav_menu();
         
-        add_action('admin_init', array($this, 'add_editor_style'));
+        add_action('admin_init', array(&$this, 'add_editor_style'));
         
-        add_action( 'widgets_init', array($this, 'widgets_init'));
+        add_action( 'widgets_init', array(&$this, 'widgets_init'));
         
-        add_action( 'wp_head', array($this, 'wp_head'));
+        add_action( 'wp_head', array(&$this, 'wp_head'));
         
-        add_action( 'wp_enqueue_scripts', array($this, 'wp_enqueue_scripts'));
+        add_action( 'wp_enqueue_scripts', array(&$this, 'wp_enqueue_scripts'));
         
-        add_action( 'admin_enqueue_scripts', array($this, 'admin_enqueue_scripts'));
+        add_action( 'admin_enqueue_scripts', array(&$this, 'admin_enqueue_scripts'));
         
-        add_action('add_meta_boxes', array($this, 'add_meta_box'));
-        add_action('save_post', array($this, 'save_postdata'));
+        add_action('add_meta_boxes', array(&$this, 'add_meta_box'));
+        add_action('save_post', array(&$this, 'save_postdata'));
         
-        add_action('save_post', array($this, 'save_title'));
-        add_action('admin_notices', array($this, 'admin_notice'), 99);
+        add_action('save_post', array(&$this, 'save_title'));
+        add_action('admin_notices', array(&$this, 'admin_notice'), 99);
         
-        add_action('admin_menu', array($this, 'remove_post_custom_fields'));
+        add_action('admin_menu', array(&$this, 'remove_post_custom_fields'));
         
-        add_action('admin_head', array($this, 'add_admin_backend_css'));
+        add_action('admin_head', array(&$this, 'add_admin_backend_css'));
         
-        add_filter( 'get_archives_link', array($this, 'get_archives_link'));
+        add_filter( 'get_archives_link', array(&$this, 'get_archives_link'));
         
-        add_filter('nav_menu_css_class', array($this, 'nav_menu_css_class'));
+        add_filter('nav_menu_css_class', array(&$this, 'nav_menu_css_class'));
         
-        add_filter('wp_list_categories', array($this, 'wp_list_categories'), 10, 2);
+        add_filter('wp_list_categories', array(&$this, 'wp_list_categories'), 10, 2);
         
-        add_filter( 'excerpt_length', array($this, 'excerpt_length'), 999 );     
+        add_filter( 'excerpt_length', array(&$this, 'excerpt_length'), 999 );     
         
-        add_filter( 'wp_title', array($this, 'blue_edgy_wp_title') );
+        add_filter( 'wp_title', array(&$this, 'blue_edgy_wp_title') );
     }
             
 
@@ -214,7 +215,7 @@ class RRZE_Theme {
         $custom_fields = array(
             '_titel_ausblenden' => array(
                 'name' => '_titel_ausblenden',
-                'default' => 'false',
+                'default' => '0',
                 'title' => __( 'Titel ausblenden', self::textdomain ),
                 'description' => '',
                 'type' => 'checkbox',
@@ -444,11 +445,9 @@ class RRZE_Theme {
     }
     
     public function admin_enqueue_scripts() {
-        //if (isset($_GET['page']) && $_GET['page'] == 'my_plugin_page') {
-            wp_enqueue_media();
-            wp_register_script('admin', sprintf( '%s/js/admin.js', get_template_directory_uri() ), array(), false);
-            wp_enqueue_script('admin');
-    //}
+        wp_enqueue_media();
+        wp_enqueue_style('blue-edgy-admin', sprintf( '%s/css/admin.css', get_template_directory_uri() ), array(), false);
+        wp_enqueue_script('blue-edgy-admin', sprintf( '%s/js/admin.js', get_template_directory_uri() ), array(), false);
     }
     
     public function get_archives_link($links) {
@@ -534,85 +533,72 @@ class RRZE_Theme {
     // Ausgabe der Custom Fields
     public function new_meta_boxes( $type ) {
         global $post;
-        $new_meta_boxes = self::$default_custom_fields;
+        
         wp_nonce_field('more_meta_box', 'more_meta_box_nonce');
         
+        $new_meta_boxes = self::$default_custom_fields;
+        
+        if(empty($new_meta_boxes)) {
+            return;
+        }
+        
         echo '<div class="form-wrap">';
-        $i=0;
         foreach($new_meta_boxes as $meta_box) {
             if( $meta_box['location'] == $type) {
-                $i++;
-                if ( $meta_box['type'] == 'title' ) {
-                    echo '<p style="font-size: 18px; font-weight: bold; font-style: normal; color: #e5e5e5; text-shadow: 0 1px 0 #111; line-height: 40px; background-color: #464646; border: 1px solid #111; padding: 0 10px; -moz-border-radius: 6px;">' . $meta_box[ 'title' ] . '</p>';
-                } else {           
-                    $meta_box_value = get_post_meta($post->ID, $meta_box['name'], true);
-         
-                    if($meta_box_value == "")
-                        $meta_box_value = $meta_box['default'];
-                 
-                    switch ( $meta_box['type'] ) {
-                        case 'headline':
-                            echo    '<h2 style="margin:0;padding:0;">' . $meta_box[ 'title' ] .'</h2>';
-                            break;
-                     
-                        case 'text':
-                            echo '<div class="form-field form-required">';
-                            echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong></label>';
-                            echo    '<input id="' . $meta_box[ 'name' ] . '" type="text" name="' . $meta_box[ 'name' ] . '" value="' . htmlspecialchars( $meta_box_value ) . '" style="border-color: #ccc;" />';
-                            echo    '<p>' . $meta_box[ 'description' ] . '</p>';
-                            echo '</div>';
-                            break;
-                         
-                        case 'textarea':
-                            echo '<div class="form-field form-required">';
-                            echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong></label>';
-                            echo    '<textarea name="' . $meta_box[ 'name' ] . '" style="border-color: #ccc;" rows="10">' . htmlspecialchars( $meta_box_value ) . '</textarea>';
-                            echo    '<p>' . $meta_box[ 'description' ] . '</p>';
-                            echo '</div>';
-                            break;
-                         
-                        case 'checkbox':
-                            echo '<div class="form-field form-required">';
-                            if($meta_box_value == '1'){ $checked = "checked=\"checked\""; }else{ $checked = "";}
-                            echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong>&nbsp;<input style="width: 20px;" type="checkbox" id="' . $meta_box[ 'name' ] . '" name="' . $meta_box[ 'name' ] . '" value="1" ' . $checked . ' /></label>';
-                            echo    '<p>' . $meta_box[ 'description' ] . '</p>';
-                            echo '</div>';
-                            break;
-                         
-                        case 'select':
-                            echo '<div class="form-field form-required">';
-                            echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong></label>';
-                            
-                            echo    '<select name="' . $meta_box[ 'name' ] . '">';
- 
-                            foreach ($meta_box[ 'options' ] as $option) {
-                                if(is_array($option)) {
-                                    echo '<option ' . ( $meta_box_value == $option['value'] ? 'selected="selected"' : '' ) . ' value="' . $option['value'] . '">' . $option['text'] . '</option>';
-                                } else {
-                                    echo '<option ' . ( $meta_box_value == $option ? 'selected="selected"' : '' ) . ' value="' . $option['value'] . '">' . $option['text'] . '</option>';
-                                }
+          
+                $meta_box_value = get_post_meta($post->ID, $meta_box['name'], true);
+
+                if($meta_box_value == "")
+                    $meta_box_value = $meta_box['default'];
+
+                switch ( $meta_box['type'] ) {
+                    case 'text':
+                        echo '<div class="form-field form-required">';
+                        echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong></label>';
+                        echo    '<input id="' . $meta_box[ 'name' ] . '" type="text" name="' . $meta_box[ 'name' ] . '" value="' . htmlspecialchars( $meta_box_value ) . '" style="border-color: #ccc;" />';
+                        echo    '<p>' . $meta_box[ 'description' ] . '</p>';
+                        echo '</div>';
+                        break;
+
+                    case 'textarea':
+                        echo '<div class="form-field form-required">';
+                        echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong></label>';
+                        echo    '<textarea name="' . $meta_box[ 'name' ] . '" style="border-color: #ccc;" rows="10">' . htmlspecialchars( $meta_box_value ) . '</textarea>';
+                        echo    '<p>' . $meta_box[ 'description' ] . '</p>';
+                        echo '</div>';
+                        break;
+
+                    case 'checkbox':
+                        echo '<div class="form-field form-required">';
+                        if( $meta_box_value == '1') { $checked = "checked=\"checked\""; }else{ $checked = "";}
+                        echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong>&nbsp;<input style="width: 20px;" type="checkbox" id="' . $meta_box[ 'name' ] . '" name="' . $meta_box[ 'name' ] . '" value="1" ' . $checked . ' /></label>';
+                        echo    '<p>' . $meta_box[ 'description' ] . '</p>';
+                        echo '</div>';
+                        break;
+
+                    case 'select':
+                        echo '<div class="form-field form-required">';
+                        echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong></label>';
+
+                        echo    '<select name="' . $meta_box[ 'name' ] . '">';
+
+                        foreach ($meta_box[ 'options' ] as $option) {
+                            if(is_array($option)) {
+                                echo '<option ' . ( $meta_box_value == $option['value'] ? 'selected="selected"' : '' ) . ' value="' . $option['value'] . '">' . $option['text'] . '</option>';
+                            } else {
+                                echo '<option ' . ( $meta_box_value == $option ? 'selected="selected"' : '' ) . ' value="' . $option['value'] . '">' . $option['text'] . '</option>';
                             }
-                         
-                            echo    '</select>';
-                            echo    '<p>' . $meta_box[ 'description' ] . '</p>';
-                            echo '</div>';
-                            break;
-                         
-                        case 'image':
-                            echo '<div class="form-field form-required">';
-                            echo    '<label for="' . $meta_box[ 'name' ] .'"><strong>' . $meta_box[ 'title' ] . '</strong></label>';
-                            echo    '<input type="text" name="' . $meta_box[ 'name' ] . '" id="' . $meta_box[ 'name' ] . '" value="' . htmlspecialchars( $meta_box_value ) . '" style="width: 400px; border-color: #ccc;" />';
-                            echo    '<input type="button" id="button' . $meta_box[ 'name' ] . '" value="Browse" style="width: 60px;" class="button button-upload" rel="' . $post->ID . '" />';
-                            echo    '&nbsp;<a href="#" style="color: red;" class="remove-upload">remove</a>';
-                            echo    '<p>' . $meta_box[ 'description' ] . '</p>';
-                            echo '</div>';
-                            break;
-                    }
+                        }
+
+                        echo    '</select>';
+                        echo    '<p>' . $meta_box[ 'description' ] . '</p>';
+                        echo '</div>';
+                        break;
+
                 }
             } 
             
-        } 
-        if ($i == '0') { echo __('Auf dieser Seite stehen Ihnen keine weiteren Einstellungen zur Verfügung.', self::textdomain);}
+        }
         echo '</div>';
     }
     
@@ -621,44 +607,31 @@ class RRZE_Theme {
 		return;
 	}
         if ( !wp_verify_nonce( $_POST['more_meta_box_nonce'], 'more_meta_box') ) {
-            return $post_id;
+            return;
         }
      
         if ( wp_is_post_revision( $post_id ) or wp_is_post_autosave( $post_id ) )
-            return $post_id;
-         
+            return;
+        
+        if ( ( 'page' == $_POST['post_type'] && !current_user_can('edit_page', $post_id) ) || !current_user_can('edit_post', $post_id) ) {
+            return; 
+        }
+        
         global $post;
         $new_meta_boxes = self::$default_custom_fields;
  
         foreach($new_meta_boxes as $meta_box) {
-            if ( $meta_box['type'] != 'title' ) {
-         
-                if ( 'page' == $_POST['post_type'] ) {
-                    if ( !current_user_can( 'edit_page', $post_id ))
-                        return $post_id;
-                } else {
-                    if ( !current_user_can( 'edit_post', $post_id ))
-                        return $post_id;
-                }
-             
-                if ( is_array($_POST[$meta_box['name']]) ) {
-                 
-                    foreach($_POST[$meta_box['name']] as $cat){
-                        $cats .= $cat . ",";
-                    }
-                    $data = substr($cats, 0, -1);
-                } else { 
-                    $data = $_POST[$meta_box['name']];                     
-                }        
-     
-                if(get_post_meta($post_id, $meta_box['name']) == "")
-                    add_post_meta($post_id, $meta_box['name'], $data, true);
-                elseif($data != get_post_meta($post_id, $meta_box['name'], true))
-                    update_post_meta($post_id, $meta_box['name'], $data);
-                elseif($data == "")
-                    delete_post_meta($post_id, $meta_box['name'], get_post_meta($post_id, $meta_box['name'], true));   
+            switch ( $meta_box['type'] ) {
+                case 'checkbox':
+                    $input = isset($_POST[$meta_box['name']]) ? '1' : '0';
+                    break;
+                default:
+                    continue;
             }
+
+            update_post_meta($post_id, $meta_box['name'], $input);  
         }
+
     } 
     public function save_title($post_id) {
         
