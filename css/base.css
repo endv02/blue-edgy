@@ -230,7 +230,7 @@
     }
 
     .info, .warning {
-        background: #ffffff none repeat scroll 0 0 !important;
+        background: #f8f8f8 none repeat scroll 0 0 !important;
     }
     
     .box.dashicons-lightbulb::before {
