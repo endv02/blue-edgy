@@ -32,7 +32,9 @@ Nutzungsbedingungen
 Die Nutzung des Designs ist an folgende Bedingungen geknüpft:
 
 - YAML: Die CSS-Struktur sowie Teile des HTML-Sourcecodes basieren auf das HTML-Framework YAML. Für die Verwendung von YAML innerhalb der Friedrich-Alexander-Universität (FAU) wurde eine generelle Lizenz erworben. Diese generelle Lizenz erlaubt es, dass das Framework auch ohne Namensnennung und Rückverlinkung verwendet wird. Bei Verwendung außerhalb der FAU müssen die Lizenzbedingungen von YAML beachtet werden (siehe http://www.yaml.de/license.html).
-
+- Font Droid Sans by Ascender (http://www.droidfonts.com/), Apache License 2.0 http://www.apache.org/licenses/LICENSE-2.0    
+- Font Awesome http://fontawesome.io by Dave Gandy (SIL Open Font License 1.1)    
+- Font Linux Libertine http://www.linuxlibertine.org (SIL Open Font License 1.1)
 
 Entwickler und Projektbeteiligte
 
