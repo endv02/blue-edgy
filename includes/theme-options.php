@@ -304,31 +304,31 @@ function _rrze_color_schema_options() {
         'nat_fak' => array(
             'value' => 'nat_fak',
             'label' => __( 'FAU - Nat. Fak.', RRZE_Theme::textdomain ),
-            'colors' => array( 'menu' => '#009b77', 'menu-text' => '#ffffff', 'menu-hover' => '#aacfbd', 'menu-hover-text' => '#ffffff', 'title' => '#009b77', 'link' => '#009b77', 'hover' => '#aacfbd', 'hover-text' => '#ffffff', 'widget-title' => '#009b77', 'widget-linien' => '#aacfbd', 'widget-hover' => '#aacfbd', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#e5efea', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#e5efea', 'footer-hover' => '#aacfbd', 'footer-hover-text' => '#ffffff', 'background' => '#cecece' ),
+            'colors' => array( 'menu' => '#048767', 'menu-text' => '#ffffff', 'menu-hover' => '#006e53', 'menu-hover-text' => '#ffffff', 'title' => '#048767', 'link' => '#006e53', 'hover' => '#006e53', 'hover-text' => '#ffffff', 'widget-title' => '#048767', 'widget-linien' => '#006e53', 'widget-hover' => '#048767', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#006e53', 'footer-hover' => '#00533f', 'footer-hover-text' => '#ffffff', 'background' => '#e5efea' ),
         ),
         
         'phil_fak' => array(
             'value' => 'phil_fak',
             'label' => __( 'FAU - Phil. Fak.', RRZE_Theme::textdomain ),
-            'colors' => array( 'menu' => '#c99313', 'menu-text' => '#ffffff', 'menu-hover' => '#d9c689', 'menu-hover-text' => '#ffffff', 'title' => '#c99313', 'link' => '#c99313', 'hover' => '#d9c689', 'hover-text' => '#ffffff', 'widget-title' => '#c99313', 'widget-linien' => '#d9c689', 'widget-hover' => '#d9c689', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f3eedf', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#f3eedf', 'footer-hover' => '#d9c689', 'footer-hover-text' => '#ffffff', 'background' => '#d8d8d8' ),
+            'colors' => array( 'menu' => '#a36b0d', 'menu-text' => '#ffffff', 'menu-hover' => '#805000', 'menu-hover-text' => '#ffffff', 'title' => '#a36b0d', 'link' => '#805000', 'hover' => '#805000', 'hover-text' => '#ffffff', 'widget-title' => '#a36b0d', 'widget-linien' => '#805000', 'widget-hover' => '#a36b0d', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#805000', 'footer-hover' => '#553500', 'footer-hover-text' => '#ffffff', 'background' => '#f3eedf' ),
         ),
         
         'rewi_fak' => array(
             'value' => 'rewi_fak',
             'label' => __( 'FAU - ReWi. Fak.', RRZE_Theme::textdomain ),
-            'colors' => array( 'menu' => '#8d1429', 'menu-text' => '#ffffff', 'menu-hover' => '#c9a993', 'menu-hover-text' => '#ffffff', 'title' => '#8d1429', 'link' => '#8d1429', 'hover' => '#c9a993', 'hover-text' => '#ffffff', 'widget-title' => '#8d1429', 'widget-linien' => '#c9a993', 'widget-hover' => '#c9a993', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#ede7de', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#ede7de', 'footer-hover' => '#c9a993', 'footer-hover-text' => '#ffffff', 'background' => '#c9c9c9' ),
+            'colors' => array( 'menu' => '#8d1429', 'menu-text' => '#ffffff', 'menu-hover' => '#690013', 'menu-hover-text' => '#ffffff', 'title' => '#8d1429', 'link' => '#690013', 'hover' => '#690013', 'hover-text' => '#ffffff', 'widget-title' => '#8d1429', 'widget-linien' => '#690013', 'widget-hover' => '#8d1429', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#690013', 'footer-hover' => '#42000c', 'footer-hover-text' => '#ffffff', 'background' => '#ede7de' ),
         ),
         
         'med_fak' => array(
             'value' => 'med_fak',
             'label' => __( 'FAU - Med. Fak.', RRZE_Theme::textdomain ),
-            'colors' => array( 'menu' => '#00b1eb', 'menu-text' => '#ffffff', 'menu-hover' => '#b4d6f5', 'menu-hover-text' => '#ffffff', 'title' => '#00b1eb', 'link' => '#00b1eb', 'hover' => '#b4d6f5', 'hover-text' => '#ffffff', 'widget-title' => '#00b1eb', 'widget-linien' => '#b4d6f5', 'widget-hover' => '#b4d6f5', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#eaf3fc', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#eaf3fc', 'footer-hover' => '#b4d6f5', 'footer-hover-text' => '#ffffff', 'background' => '#eaeaea' ),
+            'colors' => array( 'menu' => '#0381A2', 'menu-text' => '#ffffff', 'menu-hover' => '#026480', 'menu-hover-text' => '#ffffff', 'title' => '#0381A2', 'link' => '#026480', 'hover' => '#026480', 'hover-text' => '#ffffff', 'widget-title' => '#0381A2', 'widget-linien' => '#026480', 'widget-hover' => '#0381A2', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#026480', 'footer-hover' => '#014e63', 'footer-hover-text' => '#ffffff', 'background' => '#eaf3fc' ),
         ),
         
         'fau' => array(
             'value' => 'fau',
             'label' => __( 'FAU', RRZE_Theme::textdomain ),
-            'colors' => array( 'menu' => '#003865', 'menu-text' => '#ffffff', 'menu-hover' => '#90a7c6', 'menu-hover-text' => '#ffffff', 'title' => '#003865', 'link' => '#003865', 'hover' => '#90a7c6', 'hover-text' => '#ffffff', 'widget-title' => '#003865', 'widget-linien' => '#90a7c6', 'widget-hover' => '#90a7c6', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#dde5f0', 'footer-widget-text' => '#d0d0d0', 'footer-widget-linien' => '#dde5f0', 'footer-hover' => '#90a7c6', 'footer-hover-text' => '#ffffff', 'background' => '#c6c6c6' ),
+            'colors' => array( 'menu' => '#003366', 'menu-text' => '#ffffff', 'menu-hover' => '#24598f', 'menu-hover-text' => '#ffffff', 'title' => '#003366', 'link' => '#24598f', 'hover' => '#24598f', 'hover-text' => '#ffffff', 'widget-title' => '#003366', 'widget-linien' => '#24598f', 'widget-hover' => '#003366', 'widget-hover-text' => '#ffffff', 'footer-widget-title' => '#f8f8f8', 'footer-widget-text' => '#f8f8f8', 'footer-widget-linien' => '#24598f', 'footer-hover' => '#1f4c7a', 'footer-hover-text' => '#ffffff', 'background' => '#dde5f0' ),
         ),
         
     );
