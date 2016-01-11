@@ -6,7 +6,7 @@
 class rrze_Widget_Text extends WP_Widget {
 
 	function __construct() {
-		$widget_ops = array('classname' => 'widget_text', 'description' => __('Arbitrary text or HTML.', RRZE_Theme::textdomain ));
+		$widget_ops = array('classname' => 'widget_text', 'description' => __('Normaler text oder HTML.', RRZE_Theme::textdomain ));
 		$control_ops = array('width' => 400, 'height' => 350);
 		parent::__construct('text', __('Text', RRZE_Theme::textdomain ), $widget_ops, $control_ops);
 	}
@@ -53,7 +53,7 @@ class rrze_Widget_Text extends WP_Widget {
 		$bottom = $instance['bottom'] ? 'checked="checked"' : '';
 
 ?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', RRZE_Theme::textdomain ); ?></label>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Titel:', RRZE_Theme::textdomain ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 
 		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
@@ -64,7 +64,7 @@ class rrze_Widget_Text extends WP_Widget {
 		
                 </p>
 
-		<p><input id="<?php echo $this->get_field_id('filter'); ?>" name="<?php echo $this->get_field_name('filter'); ?>" type="checkbox" <?php checked(isset($instance['filter']) ? $instance['filter'] : 0); ?> />&nbsp;<label for="<?php echo $this->get_field_id('filter'); ?>"><?php _e('Automatically add paragraphs', RRZE_Theme::textdomain ); ?></label></p>
+		<p><input id="<?php echo $this->get_field_id('filter'); ?>" name="<?php echo $this->get_field_name('filter'); ?>" type="checkbox" <?php checked(isset($instance['filter']) ? $instance['filter'] : 0); ?> />&nbsp;<label for="<?php echo $this->get_field_id('filter'); ?>"><?php _e('Absätze automatisch hinzufügen', RRZE_Theme::textdomain ); ?></label></p>
 <?php
 	}
 };

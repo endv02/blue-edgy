@@ -1,0 +1,837 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Design RRZE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-11 16:04+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: RRZE-Webteam\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _n:1,2;_nx:1,2;__;_e;_ex\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:6 ../content-index.php:1 ../content-page.php:1
+#: ../content-search.php:2 ../content-single.php:1
+msgid "Inhalt"
+msgstr "Content"
+
+#: ../404.php:9
+msgid "Seite nicht gefunden"
+msgstr "Page not found"
+
+#: ../404.php:13
+msgid ""
+"Ihre Suche war leider erfolglos. Vielleicht hilft die Suchfunktion oder "
+"einer der unten angegebenen Links das Gewünschte zu finden."
+msgstr ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
+
+#: ../404.php:18
+msgid "Oft verwendete Kategorien"
+msgstr "Most Used Categories"
+
+#: ../404.php:24
+msgid "Versuchen Sie es mit einem Blick in die Monatsarchive."
+msgstr "Try looking in the monthly archives."
+
+#: ../comments.php:4
+msgid ""
+"Dieser Eintrag ist passwortgeschützt. Um Kommentare anschauen zu können "
+"müssen Sie das Passwort angeben."
+msgstr ""
+"This post is password protected. Enter the password to view any comments."
+
+#: ../comments.php:12
+#, php-format
+msgid "Ein Kommentar zu &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
+msgstr[0] "One Response to %2$s"
+msgstr[1] "%1$s Responses to %2$s"
+
+#: ../comments.php:22
+msgid "Kommentare-Navigation"
+msgstr "Comment navigation"
+
+#: ../comments.php:23
+msgid "&larr; Ältere Kommentare"
+msgstr "&larr; Older Comments"
+
+#: ../comments.php:24
+msgid "Neuere Kommentare &rarr;"
+msgstr "Newer Comments &rarr;"
+
+#: ../comments.php:30
+msgid "Die Kommentarfunktion ist geschlossen."
+msgstr "Comments are closed."
+
+#: ../content-aside.php:5
+msgid "Kurzmitteilung"
+msgstr "Post format"
+
+#: ../content-aside.php:10 ../content-image.php:10 ../content-link.php:10
+#: ../includes/theme-tags.php:118
+msgid "Kommentar"
+msgstr "Comment"
+
+#: ../content-aside.php:21 ../content-gallery.php:15 ../content-image.php:16
+#: ../content-link.php:21 ../content-page.php:13 ../content-quote.php:15
+#: ../content-single.php:15 ../content-status.php:17
+msgid "Weiterlesen <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../content-aside.php:22 ../content-gallery.php:39 ../content-image.php:17
+#: ../content-link.php:22 ../content-page.php:14 ../content-quote.php:16
+#: ../content-single.php:16 ../content-status.php:18 ../content.php:37
+msgid "Seiten:"
+msgstr "Pages:"
+
+#: ../content-aside.php:29 ../content-gallery.php:45 ../content-image.php:23
+#: ../content-link.php:29 ../content-quote.php:23 ../content-status.php:25
+#: ../content.php:43 ../includes/theme-tags.php:125
+msgid "Kommentar hinterlassen"
+msgstr "Leave a comment"
+
+#: ../content-aside.php:29 ../content-gallery.php:45 ../content-image.php:23
+#: ../content-link.php:29 ../content-quote.php:23 ../content-status.php:25
+#: ../content.php:43
+msgid "<b>1</b> Kommentar"
+msgstr "One comment so far"
+
+#: ../content-aside.php:29 ../content-gallery.php:45 ../content-image.php:23
+#: ../content-link.php:29 ../content-quote.php:23 ../content-status.php:25
+#: ../content.php:43
+msgid "<b>%</b> Kommentare"
+msgstr "View all % comments"
+
+#: ../content-gallery.php:31
+#, php-format
+msgid "Diese Galerie enthält <a %1$s>%2$s Bild</a>."
+msgid_plural "Diese Galerie enthält <a %1$s>%2$s Bilder</a>."
+msgstr[0] "This gallery contains <a %1$s>%2$s image</a>."
+msgstr[1] "This gallery contains <a %1$s>%2$s images</a>."
+
+#: ../content-image.php:5
+msgid "Bild"
+msgstr "Image"
+
+#: ../content-link.php:5
+msgid "Link"
+msgstr "Link"
+
+#: ../content-page.php:18 ../content-person.php:14 ../content-single.php:38
+msgid "(Bearbeiten)"
+msgstr "(Edit)"
+
+#: ../content-quote.php:5
+msgid "Zitat"
+msgstr "Quote"
+
+#: ../content-search.php:6 ../includes/theme-tags.php:54
+#, php-format
+msgid "Suchergebnisse für: %s"
+msgstr "Search Results for: %s"
+
+#: ../content-search.php:21
+msgid "Es konnte nichts gefunden werden."
+msgstr "Nothing Found."
+
+#: ../content-search.php:25
+msgid ""
+"Leider konnte nichts gefunden werden. Versuchen Sie es mit anderen "
+"Schlüsselwörtern erneut."
+msgstr ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+
+#: ../content-single.php:26
+#, php-format
+msgid ""
+"Dieser Eintrag wurde veröffentlicht in %1$s und verschlagwortet mit %2$s von "
+"<a href=\"%4$s\">%3$s</a>."
+msgstr ""
+"This entry was posted in %1$s and tagged %2$s by <a href=\"%4$s\">%3$s</a>."
+
+#: ../content-single.php:28
+#, php-format
+msgid ""
+"Dieser Eintrag wurde veröffentlicht in %1$s von <a href=\"%4$s\">%3$s</a>."
+msgstr "This entry was posted in %1$s by <a href=\"%4$s\">%3$s</a>."
+
+#: ../content-single.php:30
+#, php-format
+msgid "Dieser Eintrag wurde von <a href=\"%4$s\">%3$s</a> veröffentlicht."
+msgstr "This entry was posted by <a href=\"%4$s\">%3$s</a>."
+
+#: ../content-single.php:35
+#, php-format
+msgid ""
+"<a href=\"%1$s\" title=\"Permalink zu %2$s\" rel=\"bookmark\">Permanenter "
+"Link zum Eintrag</a>"
+msgstr ""
+"<a href=\"%1$s\" title=\"Permalink to %2$s\" rel=\"bookmark\">Permalink</a>"
+
+#: ../content-single.php:46
+msgid "Artikelnavigation"
+msgstr "Post navigation"
+
+#: ../content-single.php:47 ../includes/theme-tags.php:74
+msgid "<span class=\"meta-nav\">&larr;</span> Vorherige"
+msgstr "<span class=\"meta-nav\">&larr;</span> Previous post link"
+
+#: ../content-single.php:48 ../includes/theme-tags.php:75
+msgid "Nächste <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Next post link <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../content-status.php:5
+msgid "Statusmitteilung"
+msgstr "Status"
+
+#: ../content.php:23
+msgid "Weiterlesen"
+msgstr "Continue reading"
+
+#: ../content.php:35
+msgid "Vollständigen Artikel lesen <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../footer.php:7 ../functions.php:335
+msgid "Technisches Menü"
+msgstr "Technical menu"
+
+#: ../footer.php:18
+msgid "Zusatzinformationen"
+msgstr "Additional information"
+
+#: ../functions.php:29
+#, php-format
+msgid ""
+"Ihre PHP-Version %s ist veraltet. Bitte aktualisieren Sie mindestens auf die "
+"PHP-Version %s."
+msgstr ""
+"Your server is running PHP version %s. Please upgrade at least to PHP "
+"version %s."
+
+#: ../functions.php:33
+#, php-format
+msgid ""
+"Ihre Wordpress-Version %s ist veraltet. Bitte aktualisieren Sie mindestens "
+"auf die Wordpress-Version %s."
+msgstr ""
+"Your Wordpress version is %s. Please upgrade at least to Wordpress version "
+"%s."
+
+#: ../functions.php:45
+msgid "Das Theme konnte nicht aktiviert werden."
+msgstr "Theme couldn't be activated."
+
+#: ../functions.php:189 ../includes/theme-options.php:866
+msgid "Layout"
+msgstr "Layout"
+
+#: ../functions.php:194 ../includes/theme-options.php:51
+msgid "Schriftart"
+msgstr "Font"
+
+#: ../functions.php:199
+msgid "Farben"
+msgstr "Colors"
+
+#: ../functions.php:204
+msgid "Blogdarstellung"
+msgstr "Blog Settings"
+
+#: ../functions.php:219
+msgid "Titel ausblenden"
+msgstr "Hide title"
+
+#: ../functions.php:326 ../includes/theme-options.php:282
+msgid "Grau"
+msgstr "Gray"
+
+#: ../functions.php:332 ../header.php:64 ../includes/theme-options.php:96
+msgid "Bereichsmenü"
+msgstr "Area menu"
+
+#: ../functions.php:352
+msgid "Sidebar links"
+msgstr "Sidebar left"
+
+#: ../functions.php:354 ../functions.php:364
+msgid "Dieser Bereich ist für die Menüs und die Widgets vorgesehen."
+msgstr "This area is intended for the menus and widgets."
+
+#: ../functions.php:362
+msgid "Sidebar rechts"
+msgstr "Sidebar right"
+
+#: ../functions.php:372
+msgid "Footer-Sidebar links"
+msgstr "Footer Sidebar left"
+
+#: ../functions.php:374
+msgid ""
+"Dieser Bereich ist für die Zusatzinformationen (im Footer links) vorgesehen. "
+"Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf "
+"jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe "
+"auf dem Drucker nicht mit ausgegeben!"
+msgstr ""
+"This area is intended for additional information (in the footer on the "
+"left). Here could be useful links and other information is available, which "
+"should be displayed on each page. This information will not be sent to the "
+"printer!"
+
+#: ../functions.php:382
+msgid "Footer-Sidebar mitte"
+msgstr "Footer Sidebar center"
+
+#: ../functions.php:384
+msgid ""
+"Dieser Bereich ist für die Zusatzinformationen (im Footer mitte) vorgesehen. "
+"Hier könnten hilfreiche Links oder sonstige Informationen stehen, welche auf "
+"jeder Seite eingeblendet werden sollen. Diese Angaben werden bei der Ausgabe "
+"auf dem Drucker nicht mit ausgegeben!"
+msgstr ""
+"This area is intended for additional information (in the footer center). "
+"Here could be useful links and other information is available, which should "
+"be displayed on each page. This information will not be sent to the printer!"
+
+#: ../functions.php:392
+msgid "Footer-Sidebar rechts"
+msgstr "Footer Sidebar right"
+
+#: ../functions.php:394
+msgid ""
+"Dieser Bereich ist für die Zusatzinformationen (im Footer rechts) "
+"vorgesehen. Hier könnten hilfreiche Links oder sonstige Informationen "
+"stehen, welche auf jeder Seite eingeblendet werden sollen. Diese Angaben "
+"werden bei der Ausgabe auf dem Drucker nicht mit ausgegeben!"
+msgstr ""
+"This area is intended for additional information (in the footer on the "
+"right). Here could be useful links and other information is available, which "
+"should be displayed on each page. This information will not be sent to the "
+"printer!"
+
+#: ../functions.php:516
+msgid "Weitere Einstellungen"
+msgstr "More Settings"
+
+#: ../functions.php:648
+msgid "Sie haben noch keinen Titel eingegeben."
+msgstr "Please enter a title."
+
+#: ../functions.php:655
+msgid "Dokument ohne Titel"
+msgstr "Document without title"
+
+#: ../header.php:23
+msgid "Zum Inhalt springen"
+msgstr "Skip to Content"
+
+#: ../header.php:24
+msgid "Zum Bereichsmenü springen"
+msgstr "Go to area menu"
+
+#: ../header.php:25
+msgid "Zu den allgemeinen Informationen springen"
+msgstr "Jump to the general information area"
+
+#: ../header.php:27
+msgid "Zu den Zusatzinformationen springen"
+msgstr "Jump to the additional information area"
+
+#: ../header.php:71
+msgid "Breadcrumb"
+msgstr "Breadcrumb"
+
+#: ../includes/theme-options.php:16 ../includes/theme-options.php:705
+msgid "Einstellungen"
+msgstr "Settings"
+
+#: ../includes/theme-options.php:38
+msgid "Layouteinstellungen"
+msgstr "Layout Settings"
+
+#: ../includes/theme-options.php:40
+msgid "Seitenlayout"
+msgstr "Page Layout"
+
+#: ../includes/theme-options.php:42
+msgid "Header-Layout"
+msgstr "Header Layout"
+
+#: ../includes/theme-options.php:44
+msgid "Footer-Layout"
+msgstr "Footer Layout"
+
+#: ../includes/theme-options.php:46
+msgid "Position des Suchformulars"
+msgstr "Position of the search form"
+
+#: ../includes/theme-options.php:53
+msgid "Allgemein"
+msgstr "General"
+
+#: ../includes/theme-options.php:55
+msgid "Überschrift"
+msgstr "Heading"
+
+#: ../includes/theme-options.php:57
+msgid "Menü"
+msgstr "Menu"
+
+#: ../includes/theme-options.php:59
+msgid "Widget-Titel"
+msgstr "Widget Title"
+
+#: ../includes/theme-options.php:61
+msgid "Widget-Inhalt"
+msgstr "Content"
+
+#: ../includes/theme-options.php:66
+msgid "Farbeinstellungen"
+msgstr "Color Settings"
+
+#: ../includes/theme-options.php:70
+msgid "Farbschemas"
+msgstr "Color Schemes"
+
+#: ../includes/theme-options.php:75
+msgid "Darstellung der Beitragsübersicht"
+msgstr "Show listed posts"
+
+#: ../includes/theme-options.php:77
+msgid "Beiträge auf der Übersichtsseite anzeigen"
+msgstr "Show posts listed in a category"
+
+#: ../includes/theme-options.php:79
+msgid "Anzahl der angezeigten Wörter in der Vorschau"
+msgstr "Number of shown words in excerpt"
+
+#: ../includes/theme-options.php:81
+msgid "Bild im Textauszug"
+msgstr "Image in excerpt"
+
+#: ../includes/theme-options.php:83
+msgid "Platzhalter für Vorschau"
+msgstr "Placeholder for preview"
+
+#: ../includes/theme-options.php:91
+msgid "keiner"
+msgstr "none"
+
+#: ../includes/theme-options.php:107
+msgid "1 Spalte - keine Sidebar"
+msgstr "1 column - No Sidebar"
+
+#: ../includes/theme-options.php:111
+msgid "2 Spalten - linke Sidebar"
+msgstr "2 columns - Left Sidebar"
+
+#: ../includes/theme-options.php:116
+msgid "2 Spalten - rechte Sidebar"
+msgstr "2 columns - Right sidebar"
+
+#: ../includes/theme-options.php:121
+msgid "3 Spalten - linke und rechte Sidebar"
+msgstr "3 Columns - Left and Right Sidebar"
+
+#: ../includes/theme-options.php:152
+msgid "Titel oben - links"
+msgstr "Title at the top - align left"
+
+#: ../includes/theme-options.php:153
+msgid "Titel oben - zentriert"
+msgstr "Title at the top - align center"
+
+#: ../includes/theme-options.php:154
+msgid "Titel oben - rechts"
+msgstr "Title at the top - align right "
+
+#: ../includes/theme-options.php:155
+msgid "Titel mittig - links"
+msgstr "Titel in the middle - align left"
+
+#: ../includes/theme-options.php:156
+msgid "Titel mittig - rechts"
+msgstr "Title in the middle - align right"
+
+#: ../includes/theme-options.php:157
+msgid "Titel unten - links"
+msgstr "Title at the bottom - align left"
+
+#: ../includes/theme-options.php:158
+msgid "Titel unten - rechts"
+msgstr "Titel at the bottom - align right"
+
+#: ../includes/theme-options.php:202
+msgid "Menüfarbe"
+msgstr "Menu Color"
+
+#: ../includes/theme-options.php:206
+msgid "Menü-Textfarbe"
+msgstr "Menu Text Color"
+
+#: ../includes/theme-options.php:210
+msgid "Menü-Hover-Farbe"
+msgstr "Menu Hover Color"
+
+#: ../includes/theme-options.php:214
+msgid "Menü-Hover-Textfarbe"
+msgstr "Menu Hover Text Color"
+
+#: ../includes/theme-options.php:218
+msgid "Titelfarbe"
+msgstr "Title Color"
+
+#: ../includes/theme-options.php:222
+msgid "Linkfarbe"
+msgstr "Link Color"
+
+#: ../includes/theme-options.php:226
+msgid "Hover-Farbe"
+msgstr "Hover Color"
+
+#: ../includes/theme-options.php:230
+msgid "Hover-Textfarbe"
+msgstr "Hover Text Color"
+
+#: ../includes/theme-options.php:234
+msgid "Widget-Titel in Spalten"
+msgstr "Widget Title in columns"
+
+#: ../includes/theme-options.php:238
+msgid "Widget-Linien in Spalten"
+msgstr "Widget Lines in columns"
+
+#: ../includes/theme-options.php:242
+msgid "Widget-Hover-Farbe in Spalten"
+msgstr "Widget Hover Color in columns"
+
+#: ../includes/theme-options.php:246
+msgid "Widget-Hover-Textfarbe in Spalten"
+msgstr "Widget Hover Text Color in columns"
+
+#: ../includes/theme-options.php:250
+msgid "Widget-Titel im Footer"
+msgstr "Widget Title in footer"
+
+#: ../includes/theme-options.php:254
+msgid "Widget-Textfarbe im Footer"
+msgstr "Widget Text Color in footer"
+
+#: ../includes/theme-options.php:258
+msgid "Widget-Linien im Footer"
+msgstr "Widget Lines in footer"
+
+#: ../includes/theme-options.php:262
+msgid "Hover-Farbe im Footer"
+msgstr "Hover Color in footer"
+
+#: ../includes/theme-options.php:266
+msgid "Hover-Textfarbe im Footer"
+msgstr "Hover Text Color in footer"
+
+#: ../includes/theme-options.php:270
+msgid "Hintergrundfarbe"
+msgstr "Background Color"
+
+#: ../includes/theme-options.php:288
+msgid "Blau"
+msgstr "Blue"
+
+#: ../includes/theme-options.php:294
+msgid "Grün"
+msgstr "Green"
+
+#: ../includes/theme-options.php:300
+msgid "Rot"
+msgstr "Red"
+
+#: ../includes/theme-options.php:306
+msgid "FAU - Nat. Fak."
+msgstr "FAU - Faculty of Sciences"
+
+#: ../includes/theme-options.php:312
+msgid "FAU - Phil. Fak."
+msgstr "FAU - Faculty of Humanities, Social Sciences & Theology"
+
+#: ../includes/theme-options.php:318
+msgid "FAU - ReWi. Fak."
+msgstr "FAU - Faculty of Business, Economics & Law"
+
+#: ../includes/theme-options.php:324
+msgid "FAU - Med. Fak."
+msgstr "FAU - Faculty of Medicine"
+
+#: ../includes/theme-options.php:330
+msgid "FAU"
+msgstr "FAU"
+
+#: ../includes/theme-options.php:343
+msgid "als vollständigen Artikel"
+msgstr "completely"
+
+#: ../includes/theme-options.php:348
+msgid "als kurze Vorschau"
+msgstr "as short preview"
+
+#: ../includes/theme-options.php:358
+msgid "Featured image > first image > first video > default image"
+msgstr ""
+
+#: ../includes/theme-options.php:359
+msgid "First image > featured image > first video > default image"
+msgstr ""
+
+#: ../includes/theme-options.php:360
+msgid "First video > featured image > first image > default image"
+msgstr ""
+
+#: ../includes/theme-options.php:361
+msgid "First video > first image > featured image > default image"
+msgstr ""
+
+#: ../includes/theme-options.php:362
+msgid "No teaser image"
+msgstr "Kein Teaser-Bild"
+
+#: ../includes/theme-options.php:371
+msgid "Platzhalter anzeigen"
+msgstr "Show placeholder"
+
+#: ../includes/theme-options.php:376
+msgid "kein Bild anzeigen"
+msgstr "Don’t show image"
+
+#: ../includes/theme-options.php:385
+msgid "Wählen Sie, welche Optionen Sie aktivieren möchten."
+msgstr "Select the options that you want to enable."
+
+#: ../includes/theme-options.php:389
+msgid "Wählen Sie, welche Schriftart Sie aktivieren möchten."
+msgstr "Choose which font you wish to enable."
+
+#: ../includes/theme-options.php:393
+msgid "Wählen Sie, welches Farbschema Sie aktivieren möchten."
+msgstr "Choose which color scheme you wish to enable."
+
+#: ../includes/theme-options.php:397
+msgid ""
+"Wählen Sie, ob auf der Übersichtsseite die vollständigen Beiträge oder nur "
+"Auszüge angezeigt werden sollen."
+msgstr "Choose if complete posts or excerpts are shown."
+
+#: ../includes/theme-options.php:398
+msgid ""
+"Wenn Sie eine Vorschau anzeigen lassen und der Beitrag keinen Auszug "
+"besitzt, wird der Artikel gekürzt dargestellt. Die Anzahl der angezeigten "
+"Wörter können Sie unten festlegen."
+msgstr "You can set the number of words to be shown in post preview below."
+
+#: ../includes/theme-options.php:447
+msgid "Spalte"
+msgid_plural "Spalten"
+msgstr[0] "Column"
+msgstr[1] "Columns"
+
+#: ../includes/theme-options.php:601
+msgid "Benutzerdefiniertes"
+msgstr "Custom"
+
+#: ../includes/theme-options.php:652
+msgid "Lassen Sie die Anzeige leer, um den Standardwert wieder herzustellen."
+msgstr "Enter an empty value to set the default font again."
+
+#: ../includes/theme-options.php:672
+msgid ""
+"Links des Textauszugs wird das Beitragsbild, ein Bild des Artikels, ein "
+"verlinktes Video oder ein Standardbild angezeigt (wenn vorhanden)."
+msgstr ""
+
+#: ../includes/theme-options.php:682
+msgid "Platzhalter-Bild für Vorschau"
+msgstr "Placeholder image for preview"
+
+#: ../includes/theme-options.php:685
+msgid "Es ist kein Platzhalter-Bild vorhanden."
+msgstr "There is noch placeholder image."
+
+#: ../includes/theme-options.php:883
+msgid "Spalten"
+msgstr "Columns"
+
+#: ../includes/theme-options.php:905
+msgid "Footer (Widgets)"
+msgstr "Footer (Widgets)"
+
+#: ../includes/theme-tags.php:17
+msgid "Sie befinden sich hier:"
+msgstr "You are here:"
+
+#: ../includes/theme-tags.php:20 ../includes/theme-tags.php:58
+#: ../includes/theme-tags.php:197
+msgid "Startseite"
+msgstr "Home"
+
+#: ../includes/theme-tags.php:23
+msgid "Kategorie"
+msgstr "Category"
+
+#: ../includes/theme-tags.php:26
+msgid "Tag"
+msgstr "Tag"
+
+#: ../includes/theme-tags.php:29
+msgid "Archive"
+msgstr "Archive"
+
+#: ../includes/theme-tags.php:32
+msgid "Autor"
+msgstr "Author"
+
+#: ../includes/theme-tags.php:73
+msgid "Suchergebnissenavigation"
+msgstr "Search navigation"
+
+#: ../includes/theme-tags.php:107
+msgid "Name"
+msgstr "Name"
+
+#: ../includes/theme-tags.php:109
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: ../includes/theme-tags.php:111
+msgid "Webauftritt"
+msgstr "Website"
+
+#: ../includes/theme-tags.php:115
+#, php-format
+msgid "Erforderliche Felder sind %s markiert"
+msgstr "Required fields are marked %s"
+
+#: ../includes/theme-tags.php:119
+#, php-format
+msgid ""
+"Sie müssen <a href=\"%s\">angemeldet sein</a>, um einen Kommentar abzugeben."
+msgstr "You must be <a href=\"%s\">logged in</a> to post a comment."
+
+#: ../includes/theme-tags.php:120
+#, php-format
+msgid ""
+"Angemeldet als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Aus "
+"diesem account abmelden\">Abmelden?</a>"
+msgstr ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+
+#: ../includes/theme-tags.php:121
+msgid "Ihre Email-Adresse wird nicht veröffentlicht."
+msgstr "Your email address will not be published"
+
+#: ../includes/theme-tags.php:122
+#, php-format
+msgid ""
+"Sie können die folgenden <abbr title=\"HyperText-Markup-Language\">HTML</"
+"abbr>-Tags benutzen: %s"
+msgstr ""
+"You can use the following <abbr title=\"HyperText Markup Language\">HTML</"
+"abbr> tags: %s"
+
+#: ../includes/theme-tags.php:126
+#, php-format
+msgid "Kommentar an %s hinterlassen"
+msgstr "Leave a comment to %s"
+
+#: ../includes/theme-tags.php:127
+msgid "Abbrechen"
+msgstr "Cancel"
+
+#: ../includes/theme-tags.php:128
+msgid "Kommentar verfassen"
+msgstr "Leave a comment"
+
+#: ../includes/theme-tags.php:243
+msgid "Blogs@FAU"
+msgstr "Blogs@FAU"
+
+#: ../includes/theme-tags.php:244
+msgid "Forum"
+msgstr "Forum"
+
+#: ../includes/theme-tags.php:245
+msgid "Hilfe"
+msgstr "Help"
+
+#: ../includes/theme-tags.php:246
+msgid "Kontakt"
+msgstr "Contact"
+
+#: ../includes/theme-tags.php:247
+msgid "Impressum"
+msgstr "Imprint"
+
+#: ../includes/theme-tags.php:248
+msgid "Nutzungsbedingungen"
+msgstr "Terms of Use"
+
+#: ../includes/widgets.php:9
+msgid "Normaler text oder HTML."
+msgstr "Arbitrary text or HTML."
+
+#: ../includes/widgets.php:11
+msgid "Text"
+msgstr "Text"
+
+#: ../includes/widgets.php:56
+msgid "Titel:"
+msgstr "Title:"
+
+#: ../includes/widgets.php:61
+msgid "Inhalt mittig ausrichten"
+msgstr "Center content"
+
+#: ../includes/widgets.php:63
+msgid "Fußlinie nicht anzeigen"
+msgstr "Don't show bottom border"
+
+#: ../includes/widgets.php:67
+msgid "Absätze automatisch hinzufügen"
+msgstr "Automatically add paragraphs"
+
+#: ../sidebar-left.php:5 ../sidebar-right.php:4
+msgid "Meta"
+msgstr "Meta"
+
+#~ msgid "Title:"
+#~ msgstr "Title:"
+
+#~ msgid "Automatically add paragraphs"
+#~ msgstr "Automatically add paragraphs"
+
+#~ msgid ""
+#~ "Auf dieser Seite stehen Ihnen keine weiteren Einstellungen zur Verfügung."
+#~ msgstr "There are no more settings on this page."
+
+#~ msgid ""
+#~ "Geben Sie eine beliebige Schriftart ein, um die Ihrer Website zu ändern. "
+#~ "Ansonsten geben Sie einen Leerwert ein, um die Standardschriftart wieder "
+#~ "einzustellen."
+#~ msgstr ""
+#~ "Enter any font to change your site. On the other hand, enter an empty "
+#~ "value to set the default font again."
+
+#~ msgid ""
+#~ "<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date"
+#~ "\" datetime=\"%3$s\" pubdate>%4$s</time></a>"
+#~ msgstr ""
+#~ "<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date"
+#~ "\" datetime=\"%3$s\" pubdate>%4$s</time></a>"
