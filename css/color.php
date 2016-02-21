@@ -4,7 +4,8 @@ echo <<<EOL
 EOL;
 echo PHP_EOL;
 echo <<<EOL
-    div#kopf, div#main  { background-color: [background]; }
+    div#kopf { background-color: [menu-text]; }
+    div#main { background-color: [background]; }
     a { color: [link]; }
     a:hover, a:focus { background-color: [hover]; color: [hover-text];}
     h1, h2, h3, h4, h5, h6 { color: [title]; }
@@ -82,11 +83,7 @@ echo <<<EOL
 	.ym-vlist li ul li ul li ul li a:focus,
 	.ym-vlist li ul li ul li ul li a:hover,
 	.ym-vlist li ul li ul li ul li a:active { background-color: [widget-hover]; color: [widget-hover-text]; }
-    body > footer { background-image: linear-gradient(270deg, [menu], [footer-hover]);
-        background-image: -webkit-linear-gradient(270deg, [menu], [footer-hover]);
-        background-image: -moz-linear-gradient(270deg, [menu], [footer-hover]);
-        background-image: -o-linear-gradient(270deg, [menu], [footer-hover]);
-        background-image: -ms-linear-gradient(270deg, [menu], [footer-hover]);
+    body > footer { background-color: [footer-hover]);
         color: [footer-widget-text];
     }
     div#main div.ym-wrapper { border-bottom-color: [footer-widget-title]; }
