@@ -27,6 +27,12 @@
                 <li><a class="ym-skip" href="#zusatzinfomarke"><?php _e( 'Zu den Zusatzinformationen springen', RRZE_Theme::textdomain ); ?></a></li>
                 <?php endif; ?>
             </ul>
+            <nav id="bereichsmenu">
+                <div class="ym-wrapper">
+                    <h2 class="ym-skip"><a name="bereichsmenumarke" id="bereichsmenumarke"><?php _e( 'Bereichsmenü', RRZE_Theme::textdomain ); ?></a></h2>
+                    <?php echo Theme_Tags::bereichsmenu(); ?>
+                </div>
+            </nav>
             <div id="title">
                 <?php if( display_header_text() ): ?>
                 <div class="ym-wrapper">
@@ -59,12 +65,6 @@
                 </div>
                 <?php endif; ?>
             </div>
-            <nav id="bereichsmenu">
-                <div class="ym-wrapper">
-                    <h2 class="ym-skip"><a name="bereichsmenumarke" id="bereichsmenumarke"><?php _e( 'Bereichsmenü', RRZE_Theme::textdomain ); ?></a></h2>
-                    <?php echo Theme_Tags::bereichsmenu(); ?>
-                </div>
-            </nav>
             <?php if( ! is_404() ): ?>
             <nav id="breadcrumb">
                 <div class="ym-wrapper">
